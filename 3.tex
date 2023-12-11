@@ -13,7 +13,7 @@
 一元多项式一般简记为$f(x)$或$g(x)$等，即
 $$f (x) =a_nx^n+a_{n-1}x^{n-1}+\cdots+a_1x +a_0$$
 
-在多项式$f(x)$中，$a_ix^i$ $(i=0, 1, 2,\ldots,n)$叫做$f(x)$的$i$次项，$a_i$叫做$i$次项的系数；当$a_i\ne 0$时，多项式$f(x)$称为一元$i$次多项式，并把它的次数记作${\rm deg} f(x)=i$．
+在多项式$f(x)$中，$a_ix^i$ $(i=0, 1, 2,\ldots,n)$叫做$f(x)$的$i$次项，$a_i$叫做$i$次项的系数；当$a_i\ne 0$时，多项式$f(x)$称为一元$i$次多项式，并把它的次数记作$\deg f(x)=i$．
 
 特别地，当$n=0$时，多项式成为
 $f (x) =a$，
@@ -88,7 +88,7 @@ g (x) &=b_nx^n+b_{n-1}x^{n-1}+\cdots+b_1x+b_0.
 \end{blk}
 
 
-不难知道，两个非零多项式相等的必要条件是它们的次数相等，即如果$f(x)=g(x)$, 那么${\rm deg}f(x)={\rm deg}g(x)$.
+不难知道，两个非零多项式相等的必要条件是它们的次数相等，即如果$f(x)=g(x)$, 那么$\deg f(x)=\deg g(x)$.
 
 应该指出，如果把多项式看作一个函数式，那么两个多项式相等就可推出当自变数取任意允许值时，两个多项式的值都是相等的．在这种意义下，我们把两个多项式相等也可以说成“恒等”．
 
@@ -286,7 +286,7 @@ $f(x) =q(x)\cdot g(x)$．
 
 正和整数的带余除法相似，一元多项式的带余除法，就是由$f(x)$, $g(x)\ne 0$而求出$q(x)$, $r(x)$, 使它们满足
 \[f (x) =q (x) \cdot g (x) +r (x) \]
-其中，${\rm deg}r(x)<{\rm deg}g(x)$ 或$r(x)=0$．并把
+其中，$\deg r(x)<\deg g(x)$ 或$r(x)=0$．并把
 $f(x)$, $g(x)$, $q(x)$和$r(x)$分别称为被除式、除式、商式和余式．
 
 
@@ -350,7 +350,7 @@ $f(x)$, $g(x)$, $q(x)$和$r(x)$分别称为被除式、除式、商式和余式�
 \begin{blk}{定理}
     对于任意两个多项式$f(x)$, $g(x)\ne 0$, 总是存在唯一的两个多项式$q(x),r(x)$, 使得等式
 $f(x) =q(x)\cdot g (x) + r(x) $
-成立，并且满足${\rm deg}r(x)<{\rm deg}g(x)$或$r(x)=0$．
+成立，并且满足$\deg r(x)<\deg g(x)$或$r(x)=0$．
 \end{blk}
 
 \begin{analyze}
@@ -363,37 +363,37 @@ $f(x) =q(x)\cdot g (x) + r(x) $
     \item 若$f(x)=0$, 则不论$g(x)$是什么样的非零多项式，都
 可以取$q(x)=r(x)=0$, 显然满足
 \[f(x)=q(x)\cdot g(x)+r(x),\quad \text{且}r(x)=0\]
-\item 若$f(x)\ne 0$, 且${\rm deg}f(x)<{\rm deg}g(x)$，则可取$q(x)=0$, $r(x)=f(x)$．同样满足
-\[f(x)=q(x)\cdot g(x)+r(x),\quad \text{且}{\rm deg}r(x)<{\rm deg}g(x)\]
-\item 若$f(x)\ne 0$, 且${\rm deg}f(x)\ge {\rm deg}g(x)$，则可以按下面的方法求出$q(x), r(x)$：
+\item 若$f(x)\ne 0$, 且$\deg f(x)<\deg g(x)$，则可取$q(x)=0$, $r(x)=f(x)$．同样满足
+\[f(x)=q(x)\cdot g(x)+r(x),\quad \text{且}\deg r(x)<\deg g(x)\]
+\item 若$f(x)\ne 0$, 且$\deg f(x)\ge \deg g(x)$，则可以按下面的方法求出$q(x), r(x)$：
 
 首先用$g(x)$的最高次项去除$f(x)$的最高次项，可得到商$q_1(x)$与余$f_1(x)$，使等式
 \begin{equation}
     f (x) =q_1 (x)\cdot y(x)+f_1(x)
 \end{equation}
-成立，其中$f_1(x)$至少比$f(x)$降低一次，即${\rm deg}f_1(x)<{\rm deg}f(x)$，或$f_1(x)=0$．这时可能有两种情况出现：
+成立，其中$f_1(x)$至少比$f(x)$降低一次，即$\deg f_1(x)<\deg f(x)$，或$f_1(x)=0$．这时可能有两种情况出现：
 \begin{enumerate}
-    \item 若${\rm deg}f_1(x)<{\rm deg}g(x)$，或$f_1(x)=0$，我们就取
+    \item 若$\deg f_1(x)<\deg g(x)$，或$f_1(x)=0$，我们就取
     \[q(x)=q_1(x),\qquad r(x)=f_1(x)\]
 显然定理条件被满足；
-\item 若${\rm deg}f_1(x)\ge {\rm deg}g(x)$, 我们就对$f_1(x)$与$g(x)$两个多项式去做上述同样的运算．
+\item 若$\deg f_1(x)\ge \deg g(x)$, 我们就对$f_1(x)$与$g(x)$两个多项式去做上述同样的运算．
 \end{enumerate}
 
 其次用$g(x)$的最高次项去除$f_1(x)$的最高次项，可得到商式$q_2(x)$与余式$f_2(x)$, 使等式
 \begin{equation}
     f_1(x)=q_2(x)\cdot g(x)+f_2(x)
 \end{equation}
-成立，其中$f_2(x)$的次数又至少比$f_1(x)$的次数降低一次，即${\rm deg}f_2(x)<{\rm deg}f_1(x)$，或$f_2(x)=0$，这时，
+成立，其中$f_2(x)$的次数又至少比$f_1(x)$的次数降低一次，即$\deg f_2(x)<\deg f_1(x)$，或$f_2(x)=0$，这时，
 \begin{enumerate}
-    \item 若${\rm deg}f_2(x)<{\rm deg}g(x)$，或$f_2(x)=0$，由(3.3)、(3.4)式得
+    \item 若$\deg f_2(x)<\deg g(x)$，或$f_2(x)=0$，由(3.3)、(3.4)式得
     \[f(x)=[q_1(x)+q_2(x)]\cdot g(x)+f_2(x)\]
     我们就取$q(x)=q_1(x)+q_2(x),\quad r(x)=f_2(x)$．
     定理显然被满足；
-    \item 若${\rm deg}f_2(x)\ge {\rm deg}g(x)$，就对$f_2(x)$与$g(x)$做上述同
+    \item 若$\deg f_2(x)\ge \deg g(x)$，就对$f_2(x)$与$g(x)$做上述同
 样运算，同样可以将$f_2(x)$的次数降低至少一次，得到商式$q_3(x)$与余式$f_3(x)$,……作上述同样的分析、处理．
 \end{enumerate}
 
-再次，由于${\rm deg}f(x)$是一个非负整数，经过有限次的逐次至少减一，总会有一次（设第$k$次）达到${\rm deg}f_k(x)<{\rm deg}g(x)$或$f_k(x)=0$．于是，我们可得等式
+再次，由于$\deg f(x)$是一个非负整数，经过有限次的逐次至少减一，总会有一次（设第$k$次）达到$\deg f_k(x)<\deg g(x)$或$f_k(x)=0$．于是，我们可得等式
 \begin{equation*}
     f_{k-1}(x)=q_k(x)\cdot g(x)+f_k(x) \tag{$k$}
 \end{equation*}
@@ -405,7 +405,7 @@ $f(x) =q(x)\cdot g (x) + r(x) $
 &=\cdots\cdots\\
 &=[q_1(x)+q_2(x)+\cdots+q_k(x)]\cdot g(x)+f_k(x)
 \end{split}\]
-其中，${\rm deg}f_k(x)<{\rm deg}g(x)$或$f_k(x)=0$．
+其中，$\deg f_k(x)<\deg g(x)$或$f_k(x)=0$．
 
 这时，我们就取
 \[\begin{split}
@@ -417,17 +417,17 @@ $f(x) =q(x)\cdot g (x) + r(x) $
 
 下面再证$q(x)$与$r(x)q$的唯一性．假设除$q(x),r(x)$外，还存在另外一组$q'(x),r'(x)$也满足
 \begin{enumerate}
-    \item $f(x)=q'(x)\cdot g(x)+r'(x)$，且${\rm deg}r'(x)<{\rm deg}g(x)$或$r'(x)=0$．结合已有的$q(x)$, $r(x)$满足．
-    \item $f(x)=q(x)\cdot g(x)+r(x)$，且${\rm deg}r(x)<{\rm deg}g(x)$或$r(x)=0$就可以得出
+    \item $f(x)=q'(x)\cdot g(x)+r'(x)$，且$\deg r'(x)<\deg g(x)$或$r'(x)=0$．结合已有的$q(x)$, $r(x)$满足．
+    \item $f(x)=q(x)\cdot g(x)+r(x)$，且$\deg r(x)<\deg g(x)$或$r(x)=0$就可以得出
 \[q(x)\cdot g(x)+r(x)=q'(x)\cdot g(x)+r'(x)\]
 所以
 \[[q(x)-q'(x)]\cdot g(x)=r'(x)-r(x)\]
 \end{enumerate}
 
 在此等式中，如果$q(x)-q'(x)\ne 0$，则有
-\[{\rm deg}\{[q(x)-q'(x)]\cdot g(x)\}\ge {\rm deg}g(x)\]
+\[\deg\{[q(x)-q'(x)]\cdot g(x)\}\ge \deg g(x)\]
 但是，由上面的情形又有
-${\rm deg}[r'(x)-r(x)]<{\rm deg}g(x)$或$[r'(x)-r(x)]$不定义次数，这是不可能的．所以
+$\deg[r'(x)-r(x)]<\deg g(x)$或$[r'(x)-r(x)]$不定义次数，这是不可能的．所以
 \[q'(x)-q(x)=0\quad \Rightarrow\quad q'(x)=q(x)\]
 
 又由于$g(x)\ne 0$，因而$r'(x)-r(x)=0$，即$r'(x)=r(x)$．因此，$q'(x)=q(x)$, $r'(x)=r(x)$．唯一性证毕．
@@ -563,7 +563,7 @@ g(x)&=px^3+(p^2-q)x^2+rx-q^2+s
 试求证：$f(x)$除以$h(x)$, $g(x)$除以$h(x)$分别得到的余式或同时为零，或同时不为零．
 
 \item 如果已知
-$f(x)=q(x)\cdot g(x)+r(x)$, 且${\rm deg}r(x)>{\rm deg}g(x)$或$r(x)=0$，$k$是非零常数，试问：
+$f(x)=q(x)\cdot g(x)+r(x)$, 且$\deg r(x)>\deg g(x)$或$r(x)=0$，$k$是非零常数，试问：
 \begin{enumerate}
     \item $kf(x)$除以$g(x)$的商式、余式各是什么？
     \item $f(x)$除以$k\cdot g(x)$商式、余式又是什么？
@@ -624,7 +624,7 @@ $f(x)=q(x)\cdot g(x)+r(x)$, 且${\rm deg}r(x)>{\rm deg}g(x)$或$r(x)=0$，$k$是
 \begin{equation}
 f(x)=q(x)(x-\alpha)(x-\beta)+r(x)
 \end{equation}
-    其中，$0\le {\rm deg}r(x)<2$或$r(x)=0$．
+    其中，$0\le \deg r(x)<2$或$r(x)=0$．
 
 因而可进一步设$r(x)=ax+b$，代入(3.5)得
 \begin{equation}
@@ -812,7 +812,7 @@ $\alpha_1, \alpha_2, \ldots, \alpha_n$
 \begin{equation}
     f (x) = (x-\alpha_1) (x-\alpha_2)\cdots (x-\alpha_n)\cdot q(x)
 \end{equation}
-但由于${\rm deg}f(x)=n$, 且${\rm deg}[(x-\alpha_1)(x-\alpha_2)\cdots(x-\alpha_n)]=n$, 所以(3.14)式中$q(x)$只能是零次多项式，即${\rm deg}g(x)=0$, 再由多项式相等的定义，可知
+但由于$\deg f(x)=n$, 且$\deg[(x-\alpha_1)(x-\alpha_2)\cdots(x-\alpha_n)]=n$, 所以(3.14)式中$q(x)$只能是零次多项式，即$\deg g(x)=0$, 再由多项式相等的定义，可知
 \[q (x) =a_n\ne 0\]
 
 若再选任一个与$\alpha_i,\; (i=1, 2,\ldots,n)$都不相等的数$\alpha_{n+1}$代入(3.14)式，得
@@ -1061,12 +1061,12 @@ $d(x)$也是$f(x)$的因式，因而也是$f(x),g(x)$的公因式；
 式$r_2(x)$（为了易于辨别，我们把第一次余式记为$r_1(x)$，类似地把第一次第二次所得的商式分别记为$q_1(x)$, $q_2(x)$, 以后以此类推），循此以往，可得到一系列的带余除法：
 \begin{equation}
     \begin{split}
-f(x)&=q_1(x)g(x)+r_1(x),\quad {\rm deg}r_1(x)<{\rm deg}g(x)\\
-g(x)&=q_2(x)r_1(x)+r_2(x),\quad {\rm deg}r_2(x)<{\rm deg}r_1(x)\\
-r_1(x)&=q_3(x)r_2(x)+r_3(x),\quad {\rm deg}r_3(x)<{\rm deg}r_2(x)\\
-r_2(x)&=q_4(x)r_3(x)+r_4(x),\quad {\rm deg}r_4(x)<{\rm deg}r_3(x)\\
+f(x)&=q_1(x)g(x)+r_1(x),\quad \deg r_1(x)<\deg g(x)\\
+g(x)&=q_2(x)r_1(x)+r_2(x),\quad \deg r_2(x)<\deg r_1(x)\\
+r_1(x)&=q_3(x)r_2(x)+r_3(x),\quad \deg r_3(x)<\deg r_2(x)\\
+r_2(x)&=q_4(x)r_3(x)+r_4(x),\quad \deg r_4(x)<\deg r_3(x)\\
 \cdots &\cdots \cdots \cdots \\
-r_{i-1}(x)&=q_{i+1}(x)r_i(x)+r_{i+1}(x),\quad {\rm deg}r_{i+1}(x)<{\rm deg}r_i(x)\\
+r_{i-1}(x)&=q_{i+1}(x)r_i(x)+r_{i+1}(x),\quad \deg r_{i+1}(x)<\deg r_i(x)\\
 \cdots &\cdots \cdots \cdots \\
 r_{s-1}(x)&=q_{s+1}(x)r_s(x)
 \end{split}
@@ -1085,7 +1085,7 @@ r_{s-1}(x)&=q_{s+1}(x)r_s(x)
 
 自然会提出这样一个问题，如果始终不能整除，怎么办？我们来证明不会出现始终不能整除的情况．
 
-设${\rm deg}g(x)$是一个有限的非负整数$m$．若$r_1(x)\ne 0$, 令${\rm deg}r_i(x)=m_i$，则
+设$\deg g(x)$是一个有限的非负整数$m$．若$r_1(x)\ne 0$, 令$\deg r_i(x)=m_i$，则
 \[m>m_1>m_2>\cdots>m_i>\cdots>m_{s-1}>m_s\]
 注意到$m$和所有$m_i$都是非负整数，而数列$m,m_1,m_2,\ldots,m_i,\ldots$
 是一个严格递减的数列，则这个数列一定是有限的．例如$m=100$时，数列最多不会超过101项．在某种情形下，若$m_s=0$, 即$r_s(x)$是一个非零常数时，$r_s(x)$就整除$r_{s-1}(x)$了．在这种情况下，$\big(f(x),g(x)\big)=1$, 我们说$f(x)$与$g(x)$互质．这就说明，即使$f(x)$, $g(x)$互质，它们的最高公因式1仍可由上述累次的带余除法求得，由此我们得到：
@@ -1149,7 +1149,7 @@ $g(x)=\poly{4,2,-18,3,-5}$
 \end{solution}
 
 在习题3.1第7题中，我们知道对被除式$f(x)$乘以非零常数$k$, 给予$r(x)$的影响也不过是乘一个常数$k$, 而我们所求的最后的$r_s(x)$本来就得乘以$\frac{1}{c}$（$c$是$r_s(x)$的首项系数）才成为
-$\big(f(x),g(x)\big)$, 所以实际上对$\big(f(x),g(x)\big)$完全没有影响，即使对部分余式$f_1(x)$(如例3.19)的$-14x^4+3x^3-15x^2+9x-2$乘以非零常数$k$, 对$\big(f(x),g(x)\big)$也没有影响，因为$\big(f(x),g(x)\big)=\big(f_1(x),g(x)\big)$在辗转相除法中，实际上我们已把求$\big(f(x),g(x)\big)$转化为求$\big(f_1(x),g(x)\big)$, (注意在定理2中，并未要求${\rm deg}r(x)<{\rm deg}g(x)$，
+$\big(f(x),g(x)\big)$, 所以实际上对$\big(f(x),g(x)\big)$完全没有影响，即使对部分余式$f_1(x)$(如例3.19)的$-14x^4+3x^3-15x^2+9x-2$乘以非零常数$k$, 对$\big(f(x),g(x)\big)$也没有影响，因为$\big(f(x),g(x)\big)=\big(f_1(x),g(x)\big)$在辗转相除法中，实际上我们已把求$\big(f(x),g(x)\big)$转化为求$\big(f_1(x),g(x)\big)$, (注意在定理2中，并未要求$\deg r(x)<\deg g(x)$，
 所以$f_1(x)$又起一个被除式的角色，因而乘以非零常数$k$，对于所得的$r(x)$仍不过相关一个常数因子，而这一点上面已说明对$\big(f(x),g(x)\big)$不会有影响的．
 
 辗转相除法是一个运算过程较繁的方法．如果$f(x)$, $g(x)$很容易分解因式，或者说如果$f(x)$与$g(x)$这两个多项式中至少有一个很容易分解成不可约因式的乘积，我们当然宁愿用分解因式的方法来求这两个多项式的最高公因式．但是多项式的因式分解并不总能做到．例如把一个三次多项式与一个四次多项式相乘，求出作为乘积的七次多项式是轻而易举的；但反过来，给出一个七次多项式，要求分解成两个次数较低的多项式的乘积，一般是很难做到的．相比之下，辗转相除法尽管较繁，却是有效、能算，总能求出两个多项式的最高公因式．再进一步考察任何一个多项式的不可约因式分解的表达式，是否总存在．如果存在，是否唯一，我们在以前的学习中并未作出结论．将来的进一步学习可以对这个问题作出肯定的答案．而这个结论要通过一系列命题的推导才能得出，辗转相除法之有效、能算恰恰是推导这一系列命题的基础之一．因此，从理论上来，辗转相除法是不可替代的重
@@ -1356,7 +1356,7 @@ $\alpha_1,\alpha_2,\alpha_3$表三个两两不等的数，试用$f(\alpha_1)$, $
 
 \begin{solution}
 \[f(x)=(x-\alpha_1)(x-\alpha_2)(x-\alpha_3)q(x)+r(x)\]
-并且：${\rm deg}r(x)\le 2$或$r(x)=0$，则
+并且：$\deg r(x)\le 2$或$r(x)=0$，则
 \[r(\alpha_1)=f(\alpha_1),\qquad r(\alpha_2)=f(\alpha_2),\qquad r(\alpha_3)=f(\alpha_3)\]
  仿照上例可得：
  \[\begin{split}
@@ -1671,8 +1671,8 @@ $f(x)$的$k$阶导数，记作$f^{(k)}(x)$，即：
   用$x-1$去连续除$f(x)$, 由综合除法得
 \begin{center}
 \begin{tikzpicture}[yscale=1.3]
-    \node at (0,0)[right]{$2-1-2$};
-    \node at (0,-0.5)[right]{$\quad +2+1$};
+    \node at (0,0)[right]{$2\ -1\ -2$};
+    \node at (0,-0.5)[right]{$\quad\ +2\ +1$};
     \node at (0,-1)[right]{$2+1\; -1 $……$c_0$};
     \node at (0,-1.5)[right]{$\quad +2$};
     \node at (0,-2)[right]{$2\quad 3$……$c_1$};
@@ -1936,7 +1936,7 @@ $\therefore\quad f(x)$除以$g(x)$所得的余式为
 \begin{enumerate}
     \item 试求$f(x)=x^4+x^3+x+1$除以下列各式所得的余式分别是什么？
 \[x-1;\quad  (x-1)^2;\quad (x-1)^3;\quad (x-1)^4\]
-\item 已知$f(x)$的首项系数为3, ${\rm deg}f(x)=4$, 而且$f(x)$
+\item 已知$f(x)$的首项系数为3, $\deg f(x)=4$, 而且$f(x)$
 分别除以$(x+2)$, $(x+2)^2$, $(x+2)^3$, $(x+2)^4$所得余式的常数项各是$-5,-13,-25,-41$, 试求$f(x)$．
 \item 多项式 $x^4+ax^3-3x^2+bx+3$ 除以$(x-1)^2$所得的
 余式为$x+1$, 试求$a,b$的值．
@@ -2032,7 +2032,7 @@ $(x+3)^2$, $(x+3)^3$, $(x+3)^4$, $(x+3)^5$所得的余式．
 
 \item 两个多项式当且仅当它们的同次项系数对应相等时，这两个多项式相等．也可以说，当两个多项式在它们的元取任意允许值时，它们的值都对应相等，这两个多项式就恒等（相等）．
 \item 在多项式集合内（系数在同一个数系范围内），加、减、乘（乘方）运算是封闭的，而且满足运算通性（满足运算律、0与1的运算特性及指数运算律）；一元多项式还有独特的带余除法运算，与整数除法类似，对于任意多项式$f(x)$与非零多项式$g(x)\ne 0$, 可以找到唯一的$q(x)$, $r(x)$, 满足
-\[f(x)=q(x)g(x)+r(x) \quad \text{且}\quad  {\rm deg}r(x)<{\rm deg}g(x)\quad \text{或}\quad r (x) =0\]
+\[f(x)=q(x)g(x)+r(x) \quad \text{且}\quad  \deg r(x)<\deg g(x)\quad \text{或}\quad r (x) =0\]
 其中，$f(x)$叫被除式，$g(x)$叫除式，$q(x)$叫商式，$r(x)$叫余式．
 
 \item 余式定理与因式定理是由带余除法直接推导出来的两个应用广泛的重要内容，它们还有两个重要推论，必须牢固掌握，灵活应用．\item 最高公因式与辗转相除法在理论和实用上都有重要作用，应该理解其原理，掌握其方法．
